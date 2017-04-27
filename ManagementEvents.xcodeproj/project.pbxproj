@@ -107,16 +107,13 @@
 		402CC8CE1EB0F13900716C1A /* ManagementEvents */ = {
 			isa = PBXGroup;
 			children = (
+				402CC9001EB0F14800716C1A /* Model */,
+				408C57571EB196EE00F8FCB1 /* View */,
+				408C57561EB196CE00F8FCB1 /* Controller */,
 				402CC8CF1EB0F13900716C1A /* AppDelegate.swift */,
-				402CC8D11EB0F13900716C1A /* ViewController.swift */,
-				402CC8D31EB0F13900716C1A /* Main.storyboard */,
 				402CC8D91EB0F13900716C1A /* Assets.xcassets */,
-				402CC8DB1EB0F13900716C1A /* LaunchScreen.storyboard */,
 				402CC8DE1EB0F13900716C1A /* Info.plist */,
 				402CC8D61EB0F13900716C1A /* ManagementEvents.xcdatamodeld */,
-				402CC90D1EB101FD00716C1A /* ManagementEventsTableViewController.swift */,
-				402CC90F1EB1116C00716C1A /* EventDetailTableViewController.swift */,
-				402CC9001EB0F14800716C1A /* Model */,
 			);
 			path = ManagementEvents;
 			sourceTree = "<group>";
@@ -146,6 +143,25 @@
 				402CC9081EB0F92900716C1A /* EventLine.swift */,
 			);
 			name = Model;
+			sourceTree = "<group>";
+		};
+		408C57561EB196CE00F8FCB1 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				402CC90D1EB101FD00716C1A /* ManagementEventsTableViewController.swift */,
+				402CC90F1EB1116C00716C1A /* EventDetailTableViewController.swift */,
+				402CC8D11EB0F13900716C1A /* ViewController.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		408C57571EB196EE00F8FCB1 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				402CC8DB1EB0F13900716C1A /* LaunchScreen.storyboard */,
+				402CC8D31EB0F13900716C1A /* Main.storyboard */,
+			);
+			name = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

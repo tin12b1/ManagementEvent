@@ -11,8 +11,8 @@ import UIKit
 
 class EventLine
 {
-    var day: String //cac ngay trong tuan
-    var events: [Event] //tat ca cac event trong ngay
+    var day: String         //các ngày trong tuần
+    var events: [Event]     //các sự kiện trong ngày
     
     init(daysOfWeek: String, includeEvents: [Event])
     {
@@ -34,6 +34,7 @@ class EventLine
         events.append(Event(titled: "Doing homeworks", description: "So much homework to complete"))
         
         return EventLine(daysOfWeek: "Monday", includeEvents: events)
+        //các sự kiện cho ngày Thứ Hai
     }
     
     private class func Tuesday() -> EventLine
@@ -44,6 +45,7 @@ class EventLine
         events.append(Event(titled: "Going to New Star", description: "Go to New Star to learn CCNA"))
 
         return EventLine(daysOfWeek: "Tuesday", includeEvents: events)
+        //các sự kiện cho ngày Thứ Ba
     }
     
     private class func Wednesday() -> EventLine
@@ -56,6 +58,7 @@ class EventLine
         events.append(Event(titled: "Sleep", description: "Go to bed after a long day"))
         
         return EventLine(daysOfWeek: "Wednesday", includeEvents: events)
+        //các sự kiện cho ngày Thứ Tư
     }
     
     private class func Thusday() -> EventLine
@@ -67,6 +70,7 @@ class EventLine
         events.append(Event(titled: "Backup Website", description: "Back up company's website"))
         
         return EventLine(daysOfWeek: "Thusday", includeEvents: events)
+        //các sự kiện cho ngày Thứ Năm
     }
     
     private class func Friday() -> EventLine
@@ -77,6 +81,7 @@ class EventLine
         events.append(Event(titled: "Buy something", description: "Go to Co.op Mart to buy something"))
         
         return EventLine(daysOfWeek: "Friday", includeEvents: events)
+        //các sự kiện cho ngày Thứ Sáu
     }
     
     private class func Saturday() -> EventLine
@@ -88,6 +93,7 @@ class EventLine
         events.append(Event(titled: "Watch Movie", description: "Go to CGV cinema to watch Spiderman"))
         
         return EventLine(daysOfWeek: "Saturday", includeEvents: events)
+        //các sự kiện cho ngày Thứ Bảy
     }
     
     private class func Sunday() -> EventLine
@@ -99,5 +105,6 @@ class EventLine
         events.append(Event(titled: "Have dinner", description: "Have dinner with my honney"))
         
         return EventLine(daysOfWeek: "Sunday", includeEvents: events)
+        //các sự kiện cho ngày Chủ Nhật
     }
 }

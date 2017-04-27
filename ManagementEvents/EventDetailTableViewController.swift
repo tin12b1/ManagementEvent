@@ -9,6 +9,8 @@
 import UIKit
 
 class EventDetailTableViewController: UITableViewController {
+    
+    // Khai báo 2 label và 1 textView để hiển thị thông tin chi tiết sự kiện
     @IBOutlet var lblDay: UILabel!
     @IBOutlet var lblEvent: UILabel!
     @IBOutlet var txtDescription: UITextView!
@@ -18,10 +20,10 @@ class EventDetailTableViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        title = "Event Detail"
-        lblDay.text = dayDetail
-        lblEvent.text = event?.title
-        txtDescription.text = event?.description
+        title = "Event Detail"                      // Đặt tiêu đề cho view hiện tại là Event Detail
+        lblDay.text = dayDetail                     // Gán ngày chứa sự kiện mà người dùng đã chọn cho Label lblDay
+        lblEvent.text = event?.title                // Gán Tên sự kiện đã chọn cho Label lblEvent
+        txtDescription.text = event?.description    // Gán Chi tiết sự kiện đã chọn cho Text View txtDescription
     }
 
     override func didReceiveMemoryWarning() {
